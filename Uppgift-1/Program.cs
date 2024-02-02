@@ -21,11 +21,11 @@ namespace Uppgift_1
             }
 
             namnLista.Sort();
+            namnLista.Reverse();
 
-            Console.WriteLine("Namnen du skrev in i omvänd bokstavsordning");
-            for (int i = namnLista.Count() - 1; i > 0; i--) 
+            foreach (string namn in namnLista)
             {
-                Console.WriteLine(namnLista[i]);
+                Console.WriteLine(namn);
             }
         }
     }
